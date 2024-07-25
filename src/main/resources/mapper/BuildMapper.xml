@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BuildMapper">
+    <!--    查询所有建筑-->
+        <select id="selectAllBuild" resultType="com.example.models.BuildModel">
+
+            select bid,bunit,bfloor,bnumber,barea from build
+        </select>
+
+</mapper>
